@@ -4,8 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tlili Mohamed | DevOps Engineer</title>
+
+    <!-- Tailwind CDN (safe to keep with Vite) -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
     <script>
       tailwind.config = {
         theme: {
@@ -14,14 +21,14 @@
               sans: ['Inter', 'sans-serif'],
             },
             colors: {
-              primary: '#020617', // Slate 950 (Darker)
-              secondary: '#0f172a', // Slate 900
-              accent: '#6366f1', // Indigo 500
-              accentHover: '#4f46e5', // Indigo 600
-              highlight: '#0ea5e9', // Sky 500
+              primary: '#020617',
+              secondary: '#0f172a',
+              accent: '#6366f1',
+              accentHover: '#4f46e5',
+              highlight: '#0ea5e9',
             },
             animation: {
-              'float': 'float 6s ease-in-out infinite',
+              float: 'float 6s ease-in-out infinite',
               'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
               'spin-slow': 'spin 12s linear infinite',
             },
@@ -29,17 +36,18 @@
               float: {
                 '0%, 100%': { transform: 'translateY(0)' },
                 '50%': { transform: 'translateY(-20px)' },
-              }
-            }
-          }
-        }
-      }
+              },
+            },
+          },
+        },
+      };
     </script>
+
     <style>
       body {
         background-color: #020617;
         color: #e2e8f0;
-        background-image: 
+        background-image:
           radial-gradient(at 0% 0%, rgba(99, 102, 241, 0.15) 0px, transparent 50%),
           radial-gradient(at 100% 0%, rgba(14, 165, 233, 0.15) 0px, transparent 50%);
         background-attachment: fixed;
@@ -69,7 +77,6 @@
         50% { background-position: 100% 50%; }
         100% { background-position: 0% 50%; }
       }
-      /* Custom Scrollbar */
       ::-webkit-scrollbar {
         width: 10px;
       }
@@ -85,18 +92,10 @@
         background: #475569;
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.1/",
-    "react": "https://esm.sh/react@^19.2.1",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.1/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.560.0"
-  }
-}
-</script>
-</head>
+  </head>
+
   <body>
     <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
