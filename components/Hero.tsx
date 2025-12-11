@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
             
             <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
               <a 
-                href="#contact" 
+                href="mailto:hammatlili666@gmail.com" 
                 className="w-full sm:w-auto px-8 py-4 bg-accent hover:bg-accentHover text-white font-bold rounded-xl transition-all shadow-[0_0_20px_rgba(99,102,241,0.3)] hover:shadow-[0_0_30px_rgba(99,102,241,0.5)] flex items-center justify-center gap-2 group"
               >
                 Let's Talk
