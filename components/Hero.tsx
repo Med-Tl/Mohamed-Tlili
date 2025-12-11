@@ -78,7 +78,7 @@ const Hero: React.FC = () => {
                        PLACEHOLDER IMAGE 
                    */}
                    <img 
-                      src="https://drive.google.com/file/d/1bIFF8-4dQTuzDtK52GQDiCmjX6GnyAtm/view?usp=sharing" 
+                      src="https://693ad50ada4005249b14ae7f.imgix.net/IMG-20220425-WA0006.jpg" 
                       alt={personalInfo.name} 
                       className="w-full h-full object-cover opacity-90 group-hover:opacity-100 group-hover:scale-105 transition-all duration-700 ease-out"
                    />
