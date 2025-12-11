@@ -45,7 +45,9 @@ const Hero: React.FC = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <a 
-                href="#" 
+                href={personalInfo.cv}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto px-8 py-4 bg-slate-800/50 hover:bg-slate-800 text-white font-medium rounded-xl transition-all border border-slate-700 hover:border-slate-500 backdrop-blur-md flex items-center justify-center gap-2"
               >
                 <FileText className="w-5 h-5" />
@@ -54,9 +56,9 @@ const Hero: React.FC = () => {
             </div>
             
             <div className="pt-4 flex items-center gap-4">
-                <SocialLink href={`https://linkedin.com/in/${personalInfo.linkedin}`} icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
-                <SocialLink href="#" icon={<Github className="w-5 h-5" />} label="GitHub" />
-                <SocialLink href="#" icon={<Globe className="w-5 h-5" />} label="GitLab" />
+                <SocialLink href={`https://linkedin.com/in/${personalInfo.linkedin}/`} icon={<Linkedin className="w-5 h-5" />} label="LinkedIn" />
+                <SocialLink href={`https://github.com/${personalInfo.github}`} icon={<Github className="w-5 h-5" />} label="GitHub" />
+                <SocialLink href={`https://gitlab.com/${personalInfo.gitlab}`} icon={<Globe className="w-5 h-5" />} label="GitLab" />
                 <SocialLink href={`mailto:${personalInfo.email}`} icon={<Mail className="w-5 h-5" />} label="Email" />
             </div>
           </div>

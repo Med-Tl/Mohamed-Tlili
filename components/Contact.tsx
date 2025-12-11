@@ -1,6 +1,6 @@
 import React from 'react';
 import SectionHeading from './SectionHeading';
-import { Mail, MapPin, Send, Linkedin } from 'lucide-react';
+import { Mail, MapPin, Send, Linkedin, Link, Github, Globe } from 'lucide-react';
 import { personalInfo } from '../data';
 
 const Contact: React.FC = () => {
@@ -31,7 +31,25 @@ const Contact: React.FC = () => {
               icon={<Linkedin className="w-5 h-5" />} 
               label="LinkedIn" 
               value={personalInfo.linkedin} 
-              href={`https://linkedin.com/in/${personalInfo.linkedin}`}
+              href={`https://linkedin.com/in/${personalInfo.linkedin}/`}
+            />
+             <ContactItem 
+              icon={<Github className="w-5 h-5" />} 
+              label="GitHub" 
+              value={personalInfo.github} 
+              href={`https://github.com/${personalInfo.github}`}
+            />
+            <ContactItem 
+              icon={<Globe className="w-5 h-5" />} 
+              label="GitLab" 
+              value={personalInfo.gitlab} 
+              href={`https://gitlab.com/${personalInfo.gitlab}`}
+            />
+            <ContactItem 
+              icon={<Link className="w-5 h-5" />} 
+              label="Linktree" 
+              value="All Links" 
+              href={personalInfo.linktree}
             />
             <ContactItem 
               icon={<MapPin className="w-5 h-5" />} 
@@ -118,7 +136,7 @@ const ContactItem: React.FC<{ icon: React.ReactNode; label: string; value: strin
     <div>
       <p className="text-xs text-slate-500 font-medium uppercase">{label}</p>
       {href ? (
-        <a href={href} className="text-white hover:text-accent transition-colors font-medium">
+        <a href={href} target="_blank" rel="noopener noreferrer" className="text-white hover:text-accent transition-colors font-medium">
           {value}
         </a>
       ) : (
