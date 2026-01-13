@@ -9,7 +9,7 @@ export const personalInfo = {
   github: "Med-Tl",
   gitlab: "Med-Tl",
   linktree: "https://linktr.ee/mohamed_tlili11",
-  cv: "https://drive.google.com/file/d/1j6cKdknTYNN-_6lEh9yI3enDjl3uWa4Y/view?usp=sharing",
+  cv: "https://drive.google.com/file/d/1xFFoluqMtN77nk8snitvpLzX0zJJS99N/view?usp=sharing",
   bio: "Passionate about automating deployments, monitoring distributed systems, and building scalable cloud infrastructure. Transforming complex problems into elegant solutions through DevOps practices.",
   aboutLong: "I'm a Computer Systems Networking graduate from ISET Kairouan with a strong foundation in DevOps, cloud infrastructure, and network administration. Passionate about automating deployments and monitoring distributed systems, I've gained hands-on experience through both academic projects and professional internships. I thrive in environments that embrace agile methodologies and cutting-edge technologies."
 };
@@ -94,6 +94,22 @@ export const projectsData: Project[] = [
     description: "Built a complete local DevOps pipeline from scratch — CI with Jenkins, Maven, SonarQube, and Docker; CD with ArgoCD, Helm, and Kubernetes. Integrated full observability stack with Prometheus, Grafana, and ELK.",
     tags: ["Jenkins", "Maven", "SonarQube", "Docker", "ArgoCD", "Helm", "Kubernetes", "Prometheus"],
     link: "https://github.com/Med-Tl/devops-demo-project"
+  },
+  {
+    title: "WatchLAN – Network Monitoring Tool",
+    company: "Personal Project",
+    description:
+      "Developed a Python-based FastAPI network monitoring service that scans local subnets and exports metrics to Prometheus, enabling Grafana dashboards for proactive network visibility.",
+    tags: ["Python", "FastAPI", "Prometheus", "Grafana", "Networking"],
+    link: "https://github.com/Med-Tl/WatchLAN"
+  },
+  {
+    title: "CloudSheet App",
+    company: "Private Project",
+    description:
+      "Enhanced a cloud-based password management application using Supabase and Netlify, implementing secure authentication, database integration, and cloud deployment.",
+    tags: ["Supabase", "Netlify", "Authentication", "Cloud Security"]
+    // No link because project is private
   }
 ];
 
@@ -160,5 +176,21 @@ export const certificationsData: Certification[] = [
     status: "Earned",
     description: "Cybersecurity fundamentals, threat analysis, and response.",
     credentialUrl: "https://www.credly.com/badges/a6694be5-cebc-41ee-85d6-152dc6a44910"
+  },
+    {
+    name: "KodeKloud Engineer – Docker (Level 1)",
+    issuer: "KodeKloud",
+    date: "January 2026",
+    status: "Earned",
+    description: "Hands-on Docker certification covering container fundamentals, image creation, container lifecycle, and Docker-based workflows.",
+    credentialUrl: "https://engineer.kodekloud.com/certificate-verification/24ab5db1-3c2f-498b-a2c4-9263237b9cb7"
+  },
+  {
+    name: "KodeKloud Engineer – Jenkins (Level 1)",
+    issuer: "KodeKloud",
+    date: "January 2026",
+    status: "Earned",
+    description: "Practical Jenkins certification focusing on CI/CD pipelines, job configuration, automation, and DevOps best practices.",
+    credentialUrl: "https://engineer.kodekloud.com/certificate-verification/e4dd2f14-7090-4043-bb99-387f61239f9a"
   }
 ];
