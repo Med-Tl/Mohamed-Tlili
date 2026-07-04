@@ -9,7 +9,7 @@ export const personalInfo = {
   github: "Med-Tl",
   gitlab: "Med-Tl",
   linktree: "https://linktr.ee/mohamed_tlili11",
-  cv: "https://drive.google.com/file/d/1xFFoluqMtN77nk8snitvpLzX0zJJS99N/view?usp=sharing",
+  cv: "https://drive.google.com/file/d/1x5yPCvC0CjkS3dfaUsu7HkxOqp9Aznh4/view?usp=drive_link",
   bio: "Passionate about automating deployments, monitoring distributed systems, and building scalable cloud infrastructure. Transforming complex problems into elegant solutions through DevOps practices.",
   aboutLong: "I'm a Computer Systems Networking graduate from ISET Kairouan with a strong foundation in DevOps, cloud infrastructure, and network administration. Passionate about automating deployments and monitoring distributed systems, I've gained hands-on experience through both academic projects and professional internships. I thrive in environments that embrace agile methodologies and cutting-edge technologies."
 };
